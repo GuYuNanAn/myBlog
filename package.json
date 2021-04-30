@@ -1,0 +1,30 @@
+{
+  "name": "myblog",
+  "version": "1.0.0",
+  "description": "没啥事弄着玩的",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config ./build/webpack.config.js",
+    "start": "webpack serve --progress --config ./build/webpack.config.js"
+  },
+  "author": "zhaojiale",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.13.15",
+    "@babel/preset-env": "^7.13.15",
+    "@vue/compiler-sfc": "^3.0.11",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "css-loader": "^5.2.1",
+    "html-webpack-plugin": "^5.3.1",
+    "style-loader": "^2.0.0",
+    "vue-loader": "^16.2.0",
+    "webpack": "^5.32.0",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "vue": "^3.0.11",
+    "vue-router": "^4.0.0-beta.9"
+  }
+}
