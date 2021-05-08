@@ -1,7 +1,7 @@
 {
   "name": "myblog",
   "version": "1.0.0",
-  "description": "没啥事弄着玩的",
+  "description": "123213",
   "main": "index.js",
   "scripts": {
     "build": "webpack --config ./build/webpack.config.js",
@@ -15,15 +15,21 @@
     "@vue/compiler-sfc": "^3.0.11",
     "babel-loader": "^8.2.2",
     "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "compression-webpack-plugin": "^7.1.2",
     "css-loader": "^5.2.1",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "html-webpack-plugin": "^5.3.1",
+    "mini-css-extract-plugin": "^1.6.0",
     "style-loader": "^2.0.0",
+    "terser-webpack-plugin": "^5.1.1",
+    "uglifyjs-webpack-plugin": "^2.2.0",
     "vue-loader": "^16.2.0",
     "webpack": "^5.32.0",
     "webpack-cli": "^4.6.0",
     "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
+    "optimize-css-assets-webpack-plugin": "^5.0.4",
     "vue": "^3.0.11",
     "vue-router": "^4.0.0-beta.9"
   }
