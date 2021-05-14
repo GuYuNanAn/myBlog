@@ -8,7 +8,7 @@ const OptimizeCssAssetsWebpackPlugin = require('optimize-css-assets-webpack-plug
 // const UglifyJsPlugin = require('uglifyjs-webpack-plugin'); //压缩js
 // const CompressionWebpackPlugin = require('compression-webpack-plugin');//gzip打包
 module.exports = {
-    mode: 'development', //环境为开发模式
+    mode: 'production', //环境为开发模式
     entry: path.resolve(__dirname, '../src/main.js'),
     output: {
         path: path.resolve(__dirname, '../dist'),
@@ -23,6 +23,10 @@ module.exports = {
     },
     module: {
         rules: [
+            {
+                test: /\.(eot|svg|ttf|woff|woff2)(\?\S*)?$/,
+                loader: 'file-loader'
+            },
             {
                 test: /\.vue$/,
                 use: [
@@ -55,9 +59,9 @@ module.exports = {
                         // pure_funcs: ['console.log'],
                         // pure_funcs: []
                     },
-                    output:{
-                        comments:false,
-                        beautify:false
+                    output: {
+                        comments: false,
+                        beautify: false
                     },
                 },
                 extractComments: false//是否将注释剥离到单独的文件中

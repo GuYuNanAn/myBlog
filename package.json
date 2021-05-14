@@ -29,6 +29,8 @@
     "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
+    "element-plus": "^1.0.2-beta.44",
+    "file-loader": "^6.2.0",
     "optimize-css-assets-webpack-plugin": "^5.0.4",
     "vue": "^3.0.11",
     "vue-router": "^4.0.0-beta.9"
