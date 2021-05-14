@@ -1,13 +1,18 @@
 <template>
-  <div class="leftMenu">左侧菜单栏</div>
+  <div class="leftMenu">
+
+    
+
+  </div>
 </template>
 
 <script></script>
 
 <style scope>
-.leftMenu {
-  background: red;
-  width: 100px;
-  height: calc(100vh - 50px);
-}
+  .leftMenu {
+    border-right: 1px solid black;
+    width: 100px;
+    height: 100vh;
+    display: inline-block;
+  }
 </style>
